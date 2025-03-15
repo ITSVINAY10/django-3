@@ -1,0 +1,22 @@
+<!DOCTYPE html>  
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentForm</title>
+    <link rel="stylesheet" href="{% static 'css/std1.css' %}">
+
+</head>
+<body>
+    
+    <div class="container" align="center">
+        <h1>Student Registration Form</h1>
+        <form method="post">
+            {{form.as_p}}
+            {% csrf_token %}
+            <input type="submit" name="" value="Register">
+        </form>
+    </div>
+</body>
+</html>
